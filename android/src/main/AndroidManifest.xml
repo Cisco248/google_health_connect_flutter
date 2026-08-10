@@ -1,0 +1,8 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dev.fluttercommunity.flutter_health_connect">
+
+    <!-- Package visibility for Health Connect APK on Android 13 and lower. -->
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
+</manifest>
