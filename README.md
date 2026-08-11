@@ -62,8 +62,58 @@ Declare **only** the Health Connect permissions your app needs:
 
 ### 3. Privacy policy activity (required)
 
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Package visibility for the Health Connect APK on Android 13 and lower -->
+    <queries>
+        <package android:name="com.google.android.apps.healthdata" />
+    </queries>
+
+    <!--
+      Host apps MUST declare, in their own manifest:
+        1. <uses-permission android:name="android.permission.health.*"/> for every
+           record type they use, and
+        2. an activity handling androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE
+           (plus a ViewPermissionUsageActivity alias for Android 14+),
+      exactly as shown in example/android/app/src/main/AndroidManifest.xml.
+    -->
+</manifest>
+```
+
 Health Connect requires a privacy-policy / rationale activity. See the example app’s
 `PermissionsRationaleActivity` and manifest `activity` / `activity-alias` entries.
+
+```xml
+<manifest>
+    <application>
+        <!-- 1. Activity declared with correct name -->
+        <activity
+            android:name=".PermissionsRationaleActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+            </intent-filter>
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE"/>
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS"/>
+            </intent-filter>
+        </activity>
+
+        <!-- 2. targetActivity updated to match .PermissionRationaleActivity -->
+        <activity-alias
+            android:name="ViewPermissionUsageActivity"
+            android:exported="true"
+            android:targetActivity="dev.fluttercommunity.flutter_health_connect.PermissionsRationaleActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+                <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+            </intent-filter>
+        </activity-alias>
+    </application>
+</manifest>
+```
 
 ### 4. Play Console declaration
 
