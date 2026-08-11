@@ -2,6 +2,7 @@ package dev.fluttercommunity.flutter_health_connect
 
 import android.content.Context
 import androidx.health.connect.client.HealthConnectClient
+import androidx.health.connect.client.HealthConnectFeatures
 
 internal class HealthConnectManager(
     private val context: Context,

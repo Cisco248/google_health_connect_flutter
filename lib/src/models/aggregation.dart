@@ -1,4 +1,4 @@
-import 'package:flutter_health_connect/src/enums/metric.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
 
 /// Result of a Health Connect aggregation query.
 /// [AggregationResult] is a subclass of [BaseRecord].

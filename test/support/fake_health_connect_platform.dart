@@ -1,4 +1,6 @@
-import 'package:flutter_health_connect/flutter_health_connect.dart';
+library;
+
+import 'package:flutter_health_connect/app.dart';
 
 /// In-memory fake used by Dart unit tests.
 class FakeHealthConnectPlatform extends HealthConnectPlatform {

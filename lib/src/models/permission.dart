@@ -1,5 +1,4 @@
-import 'package:flutter_health_connect/src/enums/access.dart';
-import 'package:flutter_health_connect/src/enums/record_type.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
 
 /// A typed Health Connect read or write permission for a record type.
 ///

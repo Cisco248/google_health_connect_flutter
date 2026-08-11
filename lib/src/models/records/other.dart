@@ -1,6 +1,5 @@
-import 'package:flutter_health_connect/src/enums/record_type.dart';
-import 'package:flutter_health_connect/src/models/health_data_origin.dart';
-import 'package:flutter_health_connect/src/models/records/_base.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
+import 'package:flutter_health_connect/src/models/export.dart';
 
 /// Oxygen saturation instantaneous measurement (percentage 0–100).
 /// [OxygenSaturationRecord] is a subclass of [BaseRecord].

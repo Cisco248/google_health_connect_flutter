@@ -1,5 +1,5 @@
 import 'package:flutter/services.dart';
-import '../exceptions/exception.dart';
+import 'package:flutter_health_connect/src/exceptions/exception.dart';
 
 /// Maps [PlatformException] codes to typed [HealthConnectException]s.
 ///

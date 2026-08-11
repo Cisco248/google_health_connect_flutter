@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_health_connect/flutter_health_connect.dart';
+import 'package:flutter_health_connect/app.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
@@ -116,9 +116,9 @@ class _ExampleHomePageState extends State<ExampleHomePage> {
                       '2. Request permissions',
                       () => _run('Request permissions', () async {
                         final granted = await _healthConnect.requestPermissions(
-                          _demoPermissions,
+                          [Permission(recordType: RecordType.steps, access: AccessType.read), Permission(recordType: RecordType.totalCaloriesBurned, access: AccessType.read)],
                         );
-                        return 'All granted: $granted';
+                        return '$granted';
                       }),
                     ),
                     _btn(

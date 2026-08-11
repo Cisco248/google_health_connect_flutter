@@ -1,7 +1,6 @@
-import 'package:flutter_health_connect/flutter_health_connect.dart';
-import 'package:flutter_health_connect/src/converters/record.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'support/fake_health_connect_platform.dart';
+import 'package:flutter_health_connect/app.dart';
 
 void main() {
   TestWidgetsFlutterBinding.ensureInitialized();

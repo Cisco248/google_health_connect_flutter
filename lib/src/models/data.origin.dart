@@ -1,18 +1,11 @@
 /// Identifies the application that produced a health record.
+/// Creates a data origin.
 class HealthDataOrigin {
-  /// Creates a data origin.
-  const HealthDataOrigin({
-    this.packageName,
-    this.applicationName,
-  });
+  const HealthDataOrigin({this.packageName, this.applicationName});
 
-  /// Android package name of the contributing app, when available.
   final String? packageName;
-
-  /// Human-readable application label, when available.
   final String? applicationName;
 
-  /// Creates an instance from a platform map.
   factory HealthDataOrigin.fromMap(Map<Object?, Object?> map) {
     return HealthDataOrigin(
       packageName: map['packageName'] as String?,
@@ -20,11 +13,10 @@ class HealthDataOrigin {
     );
   }
 
-  /// Serializes to a platform map.
   Map<String, Object?> toMap() => {
-        'packageName': packageName,
-        'applicationName': applicationName,
-      };
+    'packageName': packageName,
+    'applicationName': applicationName,
+  };
 
   @override
   String toString() =>

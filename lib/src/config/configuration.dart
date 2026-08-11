@@ -1,5 +1,7 @@
 library;
 
+export 'package:flutter_health_connect/src/config/configuration.dart';
+
 ///  Configuration for [FlutterHealthConnect].
 ///
 /// Logging never writes health record payloads or personally identifiable

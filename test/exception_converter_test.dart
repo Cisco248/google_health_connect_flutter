@@ -1,7 +1,6 @@
 import 'package:flutter/services.dart';
-import 'package:flutter_health_connect/src/converters/exception.dart';
-import 'package:flutter_health_connect/flutter_health_connect.dart';
 import 'package:flutter_test/flutter_test.dart';
+import 'package:flutter_health_connect/app.dart';
 
 void main() {
   group('ExceptionConverter', () {

@@ -1,16 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_health_connect/src/converters/exception.dart';
-import 'package:flutter_health_connect/src/converters/record.dart';
-import 'package:flutter_health_connect/src/enums/availability.dart';
-import 'package:flutter_health_connect/src/enums/metric.dart';
-import 'package:flutter_health_connect/src/enums/record_type.dart';
-import 'package:flutter_health_connect/src/models/aggregation.dart';
-import 'package:flutter_health_connect/src/models/changes.dart';
-import 'package:flutter_health_connect/src/models/daily_summary.dart';
-import 'package:flutter_health_connect/src/models/permission.dart';
-import 'package:flutter_health_connect/src/models/records/_base.dart';
-import 'package:flutter_health_connect/src/platform/platform.dart';
+import 'package:flutter_health_connect/src/service/android.platform.dart';
+import 'package:flutter_health_connect/src/converters/export.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
+import 'package:flutter_health_connect/src/models/export.dart';
 
 /// MethodChannel implementation of [HealthConnectPlatform].
 ///

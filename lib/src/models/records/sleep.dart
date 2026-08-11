@@ -1,6 +1,5 @@
-import 'package:flutter_health_connect/src/enums/record_type.dart';
-import 'package:flutter_health_connect/src/models/health_data_origin.dart';
-import 'package:flutter_health_connect/src/models/records/_base.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
+import 'package:flutter_health_connect/src/models/export.dart';
 
 /// A sleep stage nested inside a [SleepSessionRecord].
 /// [SleepStage] is a subclass of [BaseRecord].

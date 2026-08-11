@@ -1,6 +1,6 @@
-import 'package:flutter_health_connect/src/converters/record.dart';
-import 'package:flutter_health_connect/src/enums/record_type.dart';
-import 'package:flutter_health_connect/src/models/records/_base.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
+import 'package:flutter_health_connect/src/models/export.dart';
+import 'package:flutter_health_connect/src/converters/export.dart';
 
 /// Opaque Health Connect changes token used for incremental synchronization.
 /// [ChangesToken] is a subclass of [BaseRecord].

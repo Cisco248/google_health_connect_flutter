@@ -1,11 +1,11 @@
-import 'package:flutter_health_connect/src/enums/record_type.dart';
-import 'package:flutter_health_connect/src/exceptions/exception.dart';
-import 'package:flutter_health_connect/src/models/records/_base.dart';
-import 'package:flutter_health_connect/src/models/records/activity.dart';
-import 'package:flutter_health_connect/src/models/records/body.dart';
-import 'package:flutter_health_connect/src/models/records/heart.dart';
-import 'package:flutter_health_connect/src/models/records/other.dart';
-import 'package:flutter_health_connect/src/models/records/sleep.dart';
+import '../enums/record_type.dart';
+import '../exceptions/exception.dart';
+import '../models/records/_base.dart';
+import '../models/records/activity.dart';
+import '../models/records/body.dart';
+import '../models/records/heart.dart';
+import '../models/records/other.dart';
+import '../models/records/sleep.dart';
 
 /// Converts between platform maps and strongly typed [HealthRecord]s.
 ///

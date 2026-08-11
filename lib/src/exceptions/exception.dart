@@ -1,5 +1,7 @@
 library;
 
+export 'package:flutter_health_connect/src/exceptions/exception.dart';
+
 /// [HealthConnectException] is a base sealed exception for all Health Connect plugin failures.
 /// Base sealed exception for all Health Connect plugin failures.
 ///

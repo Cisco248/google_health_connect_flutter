@@ -1,5 +1,5 @@
-import '../../enums/record_type.dart';
-import '../health_data_origin.dart';
+import 'package:flutter_health_connect/src/models/export.dart';
+import 'package:flutter_health_connect/src/enums/export.dart';
 
 /// [BaseRecord] Base class for all strongly typed Health Connect records.
 ///

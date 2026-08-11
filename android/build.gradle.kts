@@ -60,6 +60,7 @@ dependencies {
     implementation("androidx.health.connect:connect-client:1.1.0")
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.9.0")
     implementation("androidx.activity:activity-ktx:1.9.3")
+//    implementation("androidx.work:work-runtime-ktx:2.11.2")
 
     testImplementation("org.jetbrains.kotlin:kotlin-test")
     testImplementation("org.junit.jupiter:junit-jupiter:5.11.4")
